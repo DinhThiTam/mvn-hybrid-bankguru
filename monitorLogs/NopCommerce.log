@@ -152,3 +152,33 @@
 [INFO ] [2021-10-31 09:54:35,296]  -------------------------- FAILED -------------------------- 
 [INFO ] [2021-10-31 09:54:35,464] Post-Condition - Close Browser - ie
 [INFO ] [2021-10-31 09:54:35,464] OS name = windows 10
+[INFO ] [2021-11-24 07:24:46,327] --------START delete file in folder---------
+[INFO ] [2021-11-24 07:24:46,329] --------END delete file in folder---------
+[INFO ] [2021-11-24 07:24:46,369] Pre-Condition - Step 01: Open browser 'ie' and navigate 'https://opensource-demo.orangehrmlive.com/'
+[INFO ] [2021-11-24 07:24:50,731] Post-Condition - Close Browser - ie
+[INFO ] [2021-11-24 07:24:50,732] OS name = windows 10
+[INFO ] [2021-11-24 07:24:50,732] 
+[INFO ] [2021-11-24 07:26:44,705] --------START delete file in folder---------
+[INFO ] [2021-11-24 07:26:44,709] --------END delete file in folder---------
+[INFO ] [2021-11-24 07:26:44,771] Pre-Condition - Step 01: Open browser 'ie' and navigate 'https://opensource-demo.orangehrmlive.com/'
+[INFO ] [2021-11-24 07:26:49,229] Post-Condition - Close Browser - ie
+[INFO ] [2021-11-24 07:26:49,229] OS name = windows 10
+[INFO ] [2021-11-24 07:26:49,230] 
+[INFO ] [2021-11-24 07:29:09,165] --------START delete file in folder---------
+[INFO ] [2021-11-24 07:29:09,168] --------END delete file in folder---------
+[INFO ] [2021-11-24 07:29:09,214] Pre-Condition - Step 01: Open browser 'ie' and navigate 'https://opensource-demo.orangehrmlive.com/'
+[INFO ] [2021-11-24 07:29:12,919] Post-Condition - Close Browser - ie
+[INFO ] [2021-11-24 07:29:12,920] OS name = windows 10
+[INFO ] [2021-11-24 07:29:12,920] 
+[INFO ] [2021-11-24 07:30:04,707] --------START delete file in folder---------
+[INFO ] [2021-11-24 07:30:04,709] --------END delete file in folder---------
+[INFO ] [2021-11-24 07:30:04,788] Pre-Condition - Step 01: Open browser 'ie' and navigate 'https://opensource-demo.orangehrmlive.com/'
+[INFO ] [2021-11-24 07:30:08,991] Post-Condition - Close Browser - ie
+[INFO ] [2021-11-24 07:30:08,991] OS name = windows 10
+[INFO ] [2021-11-24 07:30:08,993] 
+[INFO ] [2021-11-24 07:32:30,392] --------START delete file in folder---------
+[INFO ] [2021-11-24 07:32:30,394] --------END delete file in folder---------
+[INFO ] [2021-11-24 07:32:30,441] Pre-Condition - Step 01: Open browser 'ie' and navigate 'https://opensource-demo.orangehrmlive.com/'
+[INFO ] [2021-11-24 07:32:34,389] Post-Condition - Close Browser - ie
+[INFO ] [2021-11-24 07:32:34,389] OS name = windows 10
+[INFO ] [2021-11-24 07:32:34,390] Cannot invoke "Object.toString()" because "this.driver" is null

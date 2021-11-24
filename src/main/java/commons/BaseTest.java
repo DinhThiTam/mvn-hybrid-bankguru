@@ -42,6 +42,9 @@ public class BaseTest {
 		WINDOWS, MAC_OSX, LINUX;
 	}
 	
+	private enum ENVIRONMENT {
+		DEV, TESTING, STAGING, PRODUCT; 
+	} 
 	private enum PLATFORM {
 		ANDROID, IOS, WINDOW_PHONE;
 	}
@@ -140,6 +143,21 @@ public class BaseTest {
 		driver.manage().window().maximize();
 		driver.get(appURL);
 		return driver;
+	}
+	
+	private String getEnvironmentValue(String environmentName) {
+		String envUrl = null;
+		ENVIRONMENT environment = ENVIRONMENT.valueOf(environmentName.toUpperCase());
+		if(environment==ENVIRONMENT.DEV) {
+			envUrl = "https://demo.guru99.com/v1";	
+		}else if (environment==ENVIRONMENT.TESTING) {
+			envUrl = "https://demo.guru99.com/v2";
+		}else if (environment==ENVIRONMENT.STAGING) {
+			envUrl = "https://demo.guru99.com/v3";
+		}else if (environment==ENVIRONMENT.STAGING) {
+			envUrl = "https://demo.guru99.com/v4";
+		}
+		return envUrl;
 	}
 	
 	public WebDriver getWebDriver() {

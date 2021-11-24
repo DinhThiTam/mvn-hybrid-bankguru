@@ -1,11 +1,13 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.hybrid.bankguru</groupId>
-  <artifactId>com.hybrid.bankguru</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>mvn-hybrid-bankguru</name>
-  
-  <!-- Khai báo biến - Global Variable -->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.hybrid.bankguru</groupId>
+	<artifactId>com.hybrid.bankguru</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>mvn-hybrid-bankguru</name>
+
+	<!-- Khai báo biến - Global Variable -->
 	<properties>
 		<!-- Encoding for Build/ Console -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -16,6 +18,7 @@
 		<!-- Compiler Code with Java 8 -->
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<maven.compiler.source>1.8</maven.compiler.source>
+		<environment>DEV</environment>
 
 		<!-- Global variable for dependencies -->
 		<webdriver.version>3.141.59</webdriver.version>
@@ -124,11 +127,18 @@
 			<artifactId>allure-testng</artifactId>
 			<version>2.13.5</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjweaver</artifactId>
 			<version>${aspectj.version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.aeonbits.owner/owner -->
+		<dependency>
+			<groupId>org.aeonbits.owner</groupId>
+			<artifactId>owner</artifactId>
+			<version>1.0.10</version>
 		</dependency>
 	</dependencies>
 
@@ -155,7 +165,7 @@
 				<configuration>
 					<!-- Run TestNG xml file -->
 					<suiteXmlFiles>
-						<file>src/test/resources/runHRMTestcase.xml</file>
+						<file>src/test/resources/runBankGuruTestcase.xml</file>
 					</suiteXmlFiles>
 
 					<!-- Argument -->
@@ -163,7 +173,7 @@
 						-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
 					</argLine>
 				</configuration>
-				
+
 			</plugin>
 		</plugins>
 	</build>
